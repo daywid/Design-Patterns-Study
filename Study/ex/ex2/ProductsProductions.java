@@ -1,19 +1,19 @@
 package ex.ex2;
 
-public class ProductProductions extends Context{
+public class ProductsProductions extends Context{
     private double indirectCost;
 
-    public ProductProductions(){
+    public ProductsProductions(){
     }
 
-    public ProductProductions(double directCost, double indirectCost){
+    public ProductsProductions(double directCost, double indirectCost){
         super(directCost);
         this.indirectCost = indirectCost;
     }
 
     @Override
     public double calculateTotalCost(){
-        double totalCost = directCost * indirectCost;
+        double totalCost = directCost + indirectCost;
         return totalCost;
     }
 
