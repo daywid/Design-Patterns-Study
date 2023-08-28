@@ -1,6 +1,6 @@
 package ex.ex1;
 
-public class ServicesProvision extends transaction{
+public class ServicesProvision extends Transaction{
     public double serviceCharge;
 
     public ServicesProvision(){

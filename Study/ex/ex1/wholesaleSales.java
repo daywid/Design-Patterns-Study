@@ -1,12 +1,12 @@
 package ex.ex1;
 
-public class wholesaleSales extends Transaction{
+public class WholesaleSales extends Transaction{
     private double discount;
 
-    public wholesaleSales(){
+    public WholesaleSales(){
     }
     
-    public wholesaleSales(double bruteValue, double discount){
+    public WholesaleSales(double bruteValue, double discount){
         super(bruteValue);
         this.discount = discount;
     }

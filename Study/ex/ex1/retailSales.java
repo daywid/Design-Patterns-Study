@@ -1,6 +1,6 @@
 package ex.ex1;
 
-public class RetailSales extends transaction{
+public class RetailSales extends Transaction{
     private double taxRate;
 
     public RetailSales(){
