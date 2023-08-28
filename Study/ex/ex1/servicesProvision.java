@@ -1,12 +1,12 @@
 package ex.ex1;
 
-public class services_provision extends transaction{
+public class ServicesProvision extends transaction{
     public double serviceCharge;
 
-    public services_provision(){
+    public ServicesProvision(){
     }
     
-    public services_provision(double bruteValue, double serviceCharge){
+    public ServicesProvision(double bruteValue, double serviceCharge){
         super(bruteValue);
         this.serviceCharge = serviceCharge;
     }

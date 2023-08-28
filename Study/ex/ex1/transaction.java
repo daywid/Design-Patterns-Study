@@ -3,14 +3,14 @@ package ex.ex1;
 /**
  * transaction
  */
-public abstract class transaction {
+public abstract class Transaction {
 
-    double bruteValue;
+    public double bruteValue;
 
-    public transaction(){
+    public Transaction(){
     }
 
-    public transaction(double bruteValue){
+    public Transaction(double bruteValue){
         this.bruteValue = bruteValue;
     }
 

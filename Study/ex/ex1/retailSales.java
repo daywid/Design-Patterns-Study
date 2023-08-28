@@ -1,12 +1,12 @@
 package ex.ex1;
 
-public class retail_Sales extends transaction{
+public class RetailSales extends transaction{
     private double taxRate;
 
-    public retail_Sales(){
+    public RetailSales(){
     }
 
-    public retail_Sales(double bruteValue, double taxRate){
+    public RetailSales(double bruteValue, double taxRate){
         super(bruteValue);
         this.taxRate = taxRate;
     }
