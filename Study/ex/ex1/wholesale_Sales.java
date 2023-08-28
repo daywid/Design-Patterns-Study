@@ -16,4 +16,12 @@ public class wholesale_Sales extends transaction{
         double liquidValue = bruteValue - discount;
         return liquidValue;
     }
+
+    public double getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(double discount) {
+        this.discount = discount;
+    }
 }
