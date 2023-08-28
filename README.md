@@ -1,2 +1,2 @@
 # Design-Patterns-Study
-codes developed during my Design Pattern studies.
+Códigos desenvolvidos durantes meus estudos de Design Patterns // Codes developed during my Design Pattern studies.
