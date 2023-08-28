@@ -14,7 +14,6 @@ public abstract class Transaction {
         this.bruteValue = bruteValue;
     }
 
-
     public double calculateLiquidValue(){
         
         
