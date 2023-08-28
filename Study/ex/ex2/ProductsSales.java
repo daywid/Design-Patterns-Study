@@ -10,8 +10,15 @@ public class ProductsSales extends Context{
         this.profitMargin = profitMargin;
     }
 
+    @Override
     public double calculateTotalCost(){
         double totalCost = directCost * profitMargin; 
         return totalCost;
+    }
+    public double getProfitMargin() {
+        return profitMargin;
+    }
+    public void setProfitMargin(double profitMargin) {
+        this.profitMargin = profitMargin;
     }
 }
