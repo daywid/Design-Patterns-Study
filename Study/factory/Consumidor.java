@@ -4,7 +4,6 @@ public class Consumidor {
 
 	public static void main(String[] args) {
 		
-		
 		//Criar um circulo usando a fabrica de circulos.
 		IFabricaFormas circuloFactory = new FabricaCirculo();
 		IForma bolota = circuloFactory.criarforma();
