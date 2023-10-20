@@ -5,6 +5,7 @@ public class ConcreteObserver extends ABSObserver{
 	//Construtor
 	public ConcreteObserver(Subject subject) {
 		this.subject = subject;
+		this.subject.attach(this);
 	}
 	
 	

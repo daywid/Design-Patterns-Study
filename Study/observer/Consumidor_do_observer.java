@@ -18,7 +18,6 @@ public class Consumidor_do_observer {
 		
 		
 		
-		
 	}
 
 }
