@@ -8,7 +8,6 @@ public class ConcreteObserver extends ABSObserver{
 		this.subject.attach(this);
 	}
 	
-	
 	@Override
 	public void Update() {
 		//logica que reage à mudança de estado no objeto observado

@@ -28,4 +28,7 @@ public class Subject {
 		this.observers.add(observer);
 	}
 	
+	public void detach(ABSObserver observer) {
+		this.observers.remove(observer);
+	}
 }
