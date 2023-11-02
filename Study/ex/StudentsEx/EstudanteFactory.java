@@ -1,5 +1,4 @@
-package ex.StudentsEx;
-
-public interface EstudanteFactory {
-    iEstudante criarEstudante();
+// Interface da fábrica abstrata
+interface EstudanteFactory {
+    Estudante criarEstudante();
 }
