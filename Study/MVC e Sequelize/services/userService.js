@@ -1,6 +1,9 @@
 const userService = require('../services/userService');
+// services/userService.js
+const User = require('../models/user');
+const Product = require('../models/product'); 
 
-class UserController {
+class UserService {
   async createUser(req, res) {
     const { name, email, password } = req.body;
 
@@ -24,6 +27,23 @@ class UserController {
       res.status(500).json({ error: 'Ocorreu um erro durante a busca do usuário.' });
     }
   }
+
+   // Função para criar um produto
+   async createProduct(name, category, listPrice) {
+    return Product.create({ name, category, listPrice });
+  }
+
+  // Função para obter um produto por ID
+  async getProductById(productId) {
+    return Product.findByPk(productId);
+  }
+
+   // Função para obter todos os produtos
+   async getAllProducts() {
+    return Product.findAll();
+  }
+
+  
 }
 
-module.exports = new UserController();
+module.exports = new UserService();

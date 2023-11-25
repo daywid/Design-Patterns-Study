@@ -24,6 +24,41 @@ class UserController {
       res.status(500).json({ error: 'Ocorreu um erro durante a busca do usuário.' });
     }
   }
+
+  async createProduct(req, res) {
+    const { name, category, listPrice } = req.body;
+
+    try {
+      const newProduct = await userService.createProduct(name, category, listPrice);
+      res.status(201).json(newProduct);
+    } catch (error) {
+      console.error('Erro ao criar produto:', error);
+      res.status(500).json({ error: 'Ocorreu um erro durante a criação do produto.' });
+    }
+  }
+
+  async getProductById(req, res) {
+    const { productId } = req.params;
+
+    try {
+      const product = await userService.getProductById(productId);
+      res.status(200).json(product);
+    } catch (error) {
+      console.error('Erro ao buscar produto:', error);
+      res.status(500).json({ error: 'Ocorreu um erro durante a busca do produto.' });
+    }
+  }
+
+  async getAllProducts(req, res) {
+    try {
+      const products = await userService.getAllProducts();
+      res.status(200).json(products);
+    } catch (error) {
+      console.error('Erro ao buscar produtos:', error);
+      res.status(500).json({ error: 'Ocorreu um erro durante a busca dos produtos.' });
+    }
+  }
+
 }
 
 module.exports = new UserController();

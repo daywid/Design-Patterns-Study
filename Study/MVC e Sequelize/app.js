@@ -15,6 +15,17 @@ app.post('/users', async (req, res) => userController.createUser(req, res));
 // Rota para buscar um usuário por email
 app.get('/users/:email', async (req, res) => userController.getUserByEmail(req, res));
 
+// Rota para criar um produto
+app.post('/products', async (req, res) => userController.createProduct(req, res));
+
+// Rota para buscar um produto por ID
+app.get('/products/:productId', async (req, res) => userController.getProductById(req, res));
+
+// Rota para buscar todos os produtos
+app.get('/products', async (req, res) => userController.getAllProducts(req, res));
+
+
+
 // Inicie o servidor
 app.listen(port, () => {
   console.log(`Servidor está rodando na porta ${port}`);
