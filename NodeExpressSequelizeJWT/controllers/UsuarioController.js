@@ -1,6 +1,18 @@
 // controllers/UsuarioController.js
 const usuarioService = require('../services/UsuarioService');
 
+
+//post para registrar um novo usuário
+
+// Parâmetros:
+
+//email (string): Endereço de e-mail do usuário.
+//senha (string): Senha do usuário.
+
+// Possíveis Respostas:
+
+// 201 Created: Usuário registrado com sucesso. Retorna os dados do usuário.
+// 500 Internal Server Error: Erro interno do servidor.
 exports.registrar = async (req, res) => {
   try {
     const { email, senha } = req.body;
@@ -11,6 +23,17 @@ exports.registrar = async (req, res) => {
   }
 };
 
+//post para autenticar um usuário e gerar um token JWT
+
+// Parâmetros:
+
+// email (string): Endereço de e-mail do usuário.
+// senha (string): Senha do usuário.
+// Possíveis Respostas:
+
+// 200 OK: Login bem-sucedido. Retorna um token JWT.
+// 401 Unauthorized: Credenciais inválidas.
+// 500 Internal Server Error: Erro interno do servidor.
 exports.login = async (req, res) => {
   try {
     const { email, senha } = req.body;

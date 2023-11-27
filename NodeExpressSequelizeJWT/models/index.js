@@ -20,7 +20,7 @@ app.get('/api/produtos/:id', produtoController.consultarProduto);
 // Configuração do Sequelize e start do servidor
 const { sequelize } = require('./models');
 sequelize.sync().then(() => {
-  app.listen(3000, () => {
-    console.log('Servidor rodando na porta 3000');
+  app.listen(3306, () => {
+    console.log('Servidor rodando na porta 3306');
   });
 });
